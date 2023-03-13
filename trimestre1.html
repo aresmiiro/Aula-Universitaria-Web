@@ -228,7 +228,7 @@
     <!-- --------- Main Section --------- -->
     <main class="w-full">
       <section
-        class="flex flex-col items-center justify-center h-screen pb-16 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover image-background w-100 bg-bg-img"
+        class="flex flex-col items-center justify-center pb-16 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover w-100"
         style="
           background-attachment: fixed;
           background-image: linear-gradient(
@@ -243,175 +243,140 @@
         >
           Aula Universitària del Palau d'Anglesola
         </h1>
-        <a
-          href="#"
-          class="relative inline-flex items-center justify-center p-4 px-6 py-3 mt-10 overflow-hidden text-base font-normal text-black transition duration-300 ease-out rounded-full shadow-md group bg-amber-400"
-        >
-          <span
-            class="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              ></path>
-            </svg>
-          </span>
-          <span
-            class="absolute flex items-center justify-center w-full h-full text-lg text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease"
-            >Inscriu-te</span
-          >
-          <span class="relative invisible">Inscriu-te</span>
-        </a>
       </section>
-
-      <section
-        class="flex flex-col items-center justify-start w-full h-auto mt-28"
-      >
+      <section>
         <h2
-          class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
+          class="mt-16 mb-10 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
         >
-          Properes conferències
+          Programa primer trimestre
         </h2>
-        <div
-          class="grid items-center gap-20 mt-20 lg:grid-cols-2 place-content-around"
-        >
+        <p class="mb-16 font-normal text-center text-black lg:mb-4 sm:text-xl">
+          Aquestes són les conferencies que fem cada trimestre
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-10">
           <div
-            class="flex flex-col justify-center items-center h-[500px] w-[400px] bg-amber-400"
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <h3 class="mb-4 text-xl text-black justify-self-center">
-              Conferencia numero 1
-            </h3>
-            <img
-              class="h-[200px] w-[250px] justify-self-center"
-              src="./public/img/DSC_0523.JPG"
-            />
-            <p class="m-4 text-black justify-self-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-              perferendis ut quo atque exercitationem soluta est totam porro
-              adipisci, voluptatem excepturi placeat dolorem quidem harum
-              repellendus dicta inventore accusantium impedit!
-            </p>
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
+                src="./public/img/Josep-maria-sole-sabate.jpeg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Catedràtic d'Història Contemporània per la Universtat Autònoma
+                de Barcelona i llicenciat en folosofía. És especialísta en la
+                Guerra Civil Espanyola i la postguerra. Autor de diversos
+                llibres i assesor històric de TV3 i Canal 33.
+              </p>
+              <p class="text-lg">
+                Conferència: <b>"Els fets del 6 d'octubre"</b>
+              </p>
+            </div>
           </div>
           <div
-            class="flex flex-col justify-center items-center h-[500px] w-[400px] bg-amber-400"
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow"
           >
-            <h3 class="mb-4 text-xl text-black justify-self-center">
-              Conferencia numero 1
-            </h3>
-            <img
-              class="h-[200px] w-[250px] justify-self-center"
-              src="./public/img/DSC_0530.JPG"
-            />
-            <p class="m-4 text-base text-black justify-self-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-              perferendis ut quo atque exercitationem soluta est totam porro
-              adipisci, voluptatem excepturi placeat dolorem quidem harum
-              repellendus dicta inventore accusantium impedit!
-            </p>
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
+                src="./public/img/Josep-maria-sole-sabate.jpeg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                El Consorci per a la Normalització Lingüística, abreujat CPNL,
+                és un consorci d'entitats públiques de Catalunya creat el 15 de
+                desembre de 1988 amb la finalitat de fomentar el coneixement,
+                l'ús i la divulgació de la llengua catalana.
+              </p>
+              <p class="p-4 m-2 text-lg text-center">
+                Conferència: <b>"I per què canviem del català al castellà"</b>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-center">
-          <button
-            class="w-32 h-12 mt-16 text-lg font-bold bg-amber-400 text-bw rounded-3xl hover:bg-yellow-600"
+          <div
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            Veure totes
-          </button>
-        </div>
-      </section>
-
-      <section
-        class="flex items-center justify-center mt-20 mb-20 bg-white dark:bg-gray-900"
-      >
-        <div class="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
-          <h2
-            class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-          >
-            Posa't en contacte
-          </h2>
-          <p
-            class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl"
-          >
-            Per qualsevol suggeriment, dubte o pregunta et pots posar en
-            contacte amb nosaltres a:
-          </p>
-          <div class="flex items-center justify-around">
-            <a
-              href="mailto:auladelpalaudanglesola@gmail.com"
-              aria-label="Send me an email"
-              target="_blank"
-            >
-              <i class="text-3xl fa-solid fa-envelope"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100072052001419"
-              target="_blank"
-              aria-label="Check our Facebook"
-            >
-              <i class="text-3xl fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/auladelpalaudanglesola/"
-              target="_blank"
-              aria-label="Send our instagram"
-            >
-              <i class="text-3xl fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://twitter.com/auladelpalau?lang=ca"
-              target="_blank"
-              aria-label="Check our Twitter"
-            >
-              <i class="text-3xl hover:text-amber-300 fa-brands fa-twitter"></i>
-            </a>
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
+                src="./public/img/Josep-maria-sole-sabate.jpeg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl">
+                <b>Consorci per a la Normalització Lingüística</b>
+              </h3>
+              <h4 class="mt-2 text-lg">Dijous 13 d'octubre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                El Consorci per a la Normalització Lingüística, abreujat CPNL,
+                és un consorci d'entitats públiques de Catalunya creat el 15 de
+                desembre de 1988 amb la finalitat de fomentar el coneixement,
+                l'ús i la divulgació de la llengua catalana.
+              </p>
+              <p class="text-lg">
+                Conferència: <b>"I per què canviem del català al castellà"</b>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="mt-24 mb-24">
-        <h2
-          class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-        >
-          Col·laboradors:
-        </h2>
-        <div class="flex flex-wrap justify-center gap-20 mt-12 item-center">
-          <img
-            class="h-20 w-50"
-            src="public/img/escut-digital-horitzontal.png"
-          />
-
-          <img
-            class="h-20 w-50"
-            src="public/img/consell-comarcal-pla-urgell.jpg"
-          />
-
-          <img
-            class="h-20 w-50"
-            src="public/img/logo iei seminou granate.png"
-          />
-          <img class="h-20 w-50" src="public/img/diputacio lleida.jpeg" />
-          <img
-            class="w-48 h-12 mt-3"
-            src="public/img/logo-obra-social-Fundació-la-Caixa.jpg"
-          />
-        </div>
-      </section>
-      <section class="mt-24 mb-24">
-        <h2
-          class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-        >
-          Adscrita a:
-        </h2>
-        <div class="flex flex-wrap justify-center gap-20 mt-12 item-center">
-          <img class="w-56 h-20" src="public/img/MUS-AUGG.jpg" />
+          <div
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
+                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl">
+                <b>Consorci per a la Normalització Lingüística</b>
+              </h3>
+              <h4 class="mt-2 text-lg">Dijous 13 d'octubre</h4>
+              <p class="mt-4 text-center"></p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
+                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
+              <p class="mt-4 text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                dolores suscipit esse veritatis voluptatem tenetur eaque! Quae
+                sapiente delectus veniam. Doloremque beatae dolore voluptatem,
+                in consequatur tempora adipisci quis inventore.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
+                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
+                alt="Bonnie image"
+              />
+              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
+              <p class="mt-4 text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                dolores suscipit esse veritatis voluptatem tenetur eaque! Quae
+                sapiente delectus veniam. Doloremque beatae dolore voluptatem,
+                in consequatur tempora adipisci quis inventore.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
