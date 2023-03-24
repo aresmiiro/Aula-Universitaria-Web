@@ -12,4 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuDrowpDown.addEventListener('click', () =>
   dropDown.classList.toggle('hidden'))
+
+   const dropDownButton = document.querySelector('#dropdownButton')
+
+   const dropDownNav = document.querySelector('#dropdownMenu')
+
+    dropDownButton.addEventListener('click', () => dropDownNav.classList.toggle('hidden'))
+
 })

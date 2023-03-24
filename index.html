@@ -104,10 +104,17 @@
                 >
               </li>
               <li>
+                <a
+                  href="#calendari"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:text-base"
+                  >Calendari</a
+                >
+              </li>
+              <li>
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:text-base"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto md:text-base"
                 >
                   Programa
                   <svg
@@ -159,9 +166,8 @@
               </li>
               <li>
                 <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:text-base"
+                  id="dropdownButton"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto md:text-base"
                 >
                   Activitats
                   <svg
@@ -180,7 +186,7 @@
                 </button>
                 <!-- Dropdown menu -->
                 <div
-                  id="dropdownNavbar"
+                  id="dropdownMenu"
                   class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
@@ -244,7 +250,7 @@
           Aula Universitària del Palau d'Anglesola
         </h1>
         <a
-          href="#"
+          href="./soci.html"
           class="relative inline-flex items-center justify-center p-4 px-6 py-3 mt-10 overflow-hidden text-base font-normal text-black transition duration-300 ease-out rounded-full shadow-md group bg-amber-400"
         >
           <span
@@ -319,17 +325,57 @@
             </p>
           </div>
         </div>
-        <div class="flex items-center justify-center">
-          <button
-            class="w-32 h-12 mt-16 text-lg font-bold bg-amber-400 text-bw rounded-3xl hover:bg-yellow-600"
+        <div class="flex items-center justify-center mt-12">
+          <a
+            href="./trimestre3.html"
+            class="relative inline-flex items-center justify-center p-4 px-6 py-3 mt-10 overflow-hidden text-base font-normal text-black transition duration-300 ease-out rounded-full shadow-md group bg-amber-400"
           >
-            Veure totes
-          </button>
+            <span
+              class="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span
+              class="absolute flex items-center justify-center w-full h-full text-lg text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease"
+              >Veure totes</span
+            >
+            <span class="relative invisible">Veure totes</span>
+          </a>
         </div>
       </section>
 
       <section
-        class="flex items-center justify-center mt-20 mb-20 bg-white dark:bg-gray-900"
+        class="flex flex-col items-center justify-start w-full h-auto mt-28"
+      >
+        <h2
+          class="mb-8 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
+        >
+          Calendari activitats aula
+        </h2>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F6BF26&ctz=Europe%2FMadrid&showTabs=0&src=OTk0MjkwZDkxN2VhYmFmZTI0OTk1ZDg4NDEwODBkZWNmOTcyNjMzOGUyNTdlOGJmNTBhNGY4Yjc4NDQ3N2Q0M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
+          style="border: solid 1px #777"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+      <section
+        class="flex items-center justify-center mt-16 bg-white dark:bg-gray-900"
       >
         <div class="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
           <h2
@@ -338,12 +384,13 @@
             Posa't en contacte
           </h2>
           <p
-            class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl"
+            class="mb-12 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl"
           >
             Per qualsevol suggeriment, dubte o pregunta et pots posar en
-            contacte amb nosaltres a:
+            contacte amb nosaltres amb una de les nostres xarxes socials o
+            enviant un missatge
           </p>
-          <div class="flex items-center justify-around">
+          <div class="flex items-center justify-around mb-12">
             <a
               href="mailto:auladelpalaudanglesola@gmail.com"
               aria-label="Send me an email"
@@ -373,6 +420,62 @@
               <i class="text-3xl hover:text-amber-300 fa-brands fa-twitter"></i>
             </a>
           </div>
+
+          <form
+            action="https://formsubmit.co/auladelpalaudanglesola@gmail.com"
+            method="POST"
+            class="space-y-8"
+          >
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >El teu correu</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="elteucorreu@gmail.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Tema</label
+              >
+              <input
+                type="text"
+                name="subject"
+                class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="En que et podem ajudar?"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                >El teu missatge</label
+              >
+              <textarea
+                name="text"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Deixa el teu comentari..."
+              ></textarea>
+            </div>
+            <div class="">
+              <button
+                type="submit"
+                class="w-32 h-12 mt-16 text-lg font-bold bg-amber-400 text-bw rounded-3xl hover:bg-yellow-500"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 

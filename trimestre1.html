@@ -44,9 +44,7 @@
     <script type="module" src="/assets/js/app.js"></script>
     <title>Aula Universitaria</title>
   </head>
-  <body
-    class="w-screen overflow-x-hidden bg-white dark:from-bgdark dark:to-bgdark dark:bg-gradient-to-r font-subtitle"
-  >
+  <body class="w-screen overflow-x-hidden bg-white font-subtitle">
     <header class="fixed top-0 left-0 z-40 w-screen">
       <nav
         class="flex justify-center h-16 px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
@@ -57,7 +55,7 @@
           <a href="#" class="flex items-center justify-between">
             <img
               src="./public/img/Logo_Aula_2 (1).png"
-              class="h-10 md:h-12"
+              class="flex items-center justify-center h-10 md:h-12"
               alt="Logo Aula Universitaria"
             />
           </a>
@@ -226,20 +224,20 @@
     </header>
 
     <!-- --------- Main Section --------- -->
-    <main class="w-full">
+    <main class="w-full h-auto mt-20">
       <section
-        class="flex flex-col items-center justify-center pb-16 overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover w-100"
+        class="flex flex-col items-center justify-center h-[200px] overflow-hidden bg-center bg-no-repeat bg-contain w-100"
         style="
           background-attachment: fixed;
           background-image: linear-gradient(
               rgba(0, 0, 0, 0.503),
               rgba(0, 0, 0, 0.476)
             ),
-            url('public/img/DSC_0543.JPG');
+            url('public/img/castanyada_que_es_y_su_origen_52798_orig.jpg');
         "
       >
         <h1
-          class="z-40 flex justify-center text-xl font-extrabold tracking-tight text-white sm:text-4xl item-center mt-28"
+          class="z-40 flex justify-center text-2xl font-extrabold tracking-tight text-white sm:text-4xl item-center"
         >
           Aula Universitària del Palau d'Anglesola
         </h1>
@@ -250,17 +248,14 @@
         >
           Programa primer trimestre
         </h2>
-        <p class="mb-16 font-normal text-center text-black lg:mb-4 sm:text-xl">
-          Aquestes són les conferencies que fem cada trimestre
-        </p>
 
         <div class="flex flex-wrap items-center justify-center gap-10">
           <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <div class="flex flex-col items-center pb-10">
               <img
-                class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
+                class="mb-3 bg-cover rounded-full shadow-lg h-28 w-28 mt-7"
                 src="./public/img/Josep-maria-sole-sabate.jpeg"
                 alt="Bonnie image"
               />
@@ -272,21 +267,23 @@
                 Guerra Civil Espanyola i la postguerra. Autor de diversos
                 llibres i assesor històric de TV3 i Canal 33.
               </p>
-              <p class="text-lg">
+              <p class="mb-4 text-lg">
                 Conferència: <b>"Els fets del 6 d'octubre"</b>
               </p>
             </div>
           </div>
           <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            class="w-[400px] h-[400px] max-w-96 max-h-96 min-h-96 bg-white border border-gray-200 rounded-lg shadow"
           >
             <div class="flex flex-col items-center pb-10">
               <img
                 class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
-                src="./public/img/Josep-maria-sole-sabate.jpeg"
-                alt="Bonnie image"
+                src="./public/img/Consorci-normalització.jpeg"
+                alt="Consorci per a la Normalització Lingüística foto logo"
               />
-              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
+              <h3 class="mt-4 text-xl">
+                <b>Consorci per a la Normalització Lingüística</b>
+              </h3>
               <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
               <p class="p-4 m-2 text-base text-center">
                 El Consorci per a la Normalització Lingüística, abreujat CPNL,
@@ -294,86 +291,203 @@
                 desembre de 1988 amb la finalitat de fomentar el coneixement,
                 l'ús i la divulgació de la llengua catalana.
               </p>
-              <p class="p-4 m-2 text-lg text-center">
+              <p class="text-lg text-center">
                 Conferència: <b>"I per què canviem del català al castellà"</b>
               </p>
             </div>
           </div>
           <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <div class="flex flex-col items-center pb-10">
               <img
                 class="mt-4 mb-3 bg-cover rounded-full shadow-lg h-28 w-28"
-                src="./public/img/Josep-maria-sole-sabate.jpeg"
-                alt="Bonnie image"
+                src="./public/img/Joan-yeguas.jpeg"
+                alt="Joan Yeguas foto"
               />
-              <h3 class="mt-4 text-xl">
-                <b>Consorci per a la Normalització Lingüística</b>
-              </h3>
-              <h4 class="mt-2 text-lg">Dijous 13 d'octubre</h4>
+              <h3 class="mt-4 text-xl"><b>Dr. Joan Yeguas</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 20 d'octubre</h4>
               <p class="p-4 m-2 text-base text-center">
-                El Consorci per a la Normalització Lingüística, abreujat CPNL,
-                és un consorci d'entitats públiques de Catalunya creat el 15 de
-                desembre de 1988 amb la finalitat de fomentar el coneixement,
-                l'ús i la divulgació de la llengua catalana.
+                Joan Yeguas i Gassó es doctor en Història de l'Art per la
+                Universtat de Barcelona (2001) i és conservador de béns
+                culturals en l'Àrea de Renaixament i Barroc al Museu Nacional
+                d'Art de Catalunya (des del 2023)
               </p>
-              <p class="text-lg">
-                Conferència: <b>"I per què canviem del català al castellà"</b>
-              </p>
-            </div>
-          </div>
-          <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          >
-            <div class="flex flex-col items-center pb-10">
-              <img
-                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
-                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
-                alt="Bonnie image"
-              />
-              <h3 class="mt-4 text-xl">
-                <b>Consorci per a la Normalització Lingüística</b>
-              </h3>
-              <h4 class="mt-2 text-lg">Dijous 13 d'octubre</h4>
-              <p class="mt-4 text-center"></p>
-            </div>
-          </div>
-          <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          >
-            <div class="flex flex-col items-center pb-10">
-              <img
-                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
-                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
-                alt="Bonnie image"
-              />
-              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
-              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
-              <p class="mt-4 text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                dolores suscipit esse veritatis voluptatem tenetur eaque! Quae
-                sapiente delectus veniam. Doloremque beatae dolore voluptatem,
-                in consequatur tempora adipisci quis inventore.
+              <p class="m-2 text-lg text-center">
+                Conferència:
+                <b
+                  >"Com mirar un quadre. Alguns casos pràctics del Renaixament i
+                  Barroc"</b
+                >
               </p>
             </div>
           </div>
           <div
-            class="w-[400px] h-[400px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <div class="flex flex-col items-center pb-10">
               <img
-                class="w-20 h-20 mt-4 mb-3 rounded-full shadow-lg"
-                src="./public/img/1-DLL-Marca-La-força-dels-municipis-A-color-RGB-3.jpg"
-                alt="Bonnie image"
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/arnau-vilaró.jpeg"
+                alt="Arnau Vilarí foto"
               />
-              <h3 class="mt-4 text-xl"><b>Dr.Josep M.Solé i Sabaté</b></h3>
-              <h4 class="mt-2 text-lg">Dijous 6 d'octubre</h4>
-              <p class="mt-4 text-center">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                dolores suscipit esse veritatis voluptatem tenetur eaque! Quae
-                sapiente delectus veniam. Doloremque beatae dolore voluptatem,
-                in consequatur tempora adipisci quis inventore.
+              <h3 class="mt-4 text-xl"><b>Arnau Vilaró</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 27 d'octubre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Llicenciat en comunicació audiovisual per la Universitat
+                Autónoma de Barcelona i Doctor en Estudis Filmics per la
+                Universtat Pompeu Fabra. Juntament amb Carla Simón va escriure
+                "Alcarràs"(2022), pel·lícula guanyadora de l'Ós d'Or en el 72
+                Festival Internacional de Cinema de Berlín.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>"Alcarràs. Com es va crear la pel·lícula"</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/montse-perez-serra.jpeg"
+                alt="Montse Perez foto"
+              />
+              <h3 class="mt-4 text-xl"><b>Montse Pérez Serra</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 3 de Novembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Montserrat Pérez Serra, Llicenciada en Història amb
+                l’especialitat d´Arqueologia Clàssica per la Universitat Rovira
+                i Virgili de Tarragona. Actualment, és professora del Programa
+                Sènior de la Universitat de Lleida impartint les assignatures de
+                Civilitzacions Antigues a la Mediterrània, així com Història
+                Medieval de Catalunya.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>"Les 7 maravelles del món antic"</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/pol-aviyo.png"
+                alt="Pol Avinyó foto"
+              />
+              <h3 class="mt-4 text-xl"><b>Pol Avinyó</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 10 de Novembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Historiador musical del Gran Teatre del Liceu i crític d'òpera.
+                Pol Avinyó, musicòleg del Liceu ens ha parlat de l'òpera "Il
+                Trittico" de Puccini que anirem a veure el 3 de Desembre. Segons
+                Pol Avinyó es tracta de l'òpera més important de la temporada
+                del Liceu.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>"Ill trittico" de Giacomo Puccini</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/ESTHER-SOLE.jpeg"
+                alt="Dra. Esther Solé foto"
+              />
+              <h3 class="mt-4 text-xl"><b>Dra. Esther Solé</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 24 de Novembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Doctora en Història de l'Àrt i especialista en l'Àrt del s.XIX i
+                XX. És professora associada del Departament d'Història de l'Art
+                i Història Social de la Universtat de LLeida.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>" Gaudi i la Sagrada Família" </b>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/anna-m-marti.jpeg"
+                alt="Anna M. Martí foto"
+              />
+              <h3 class="mt-4 text-xl"><b>Anna M. Martí</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 1 de Desembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Postgraduada per la Universtat Autònoma sobre Comunicació i
+                líderatge polític. En aquesta xerrada mirarem de descobrir d'una
+                manera divertida i molt accessible, alguns dels aspectes claus
+                de la comunicació no verbal.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b
+                  >" La comunicació no verbal. Parlem amb el cos i amb els
+                  gestos?"
+                </b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg h-28 w-28"
+                src="./public/img/Jaume Josa.jpeg"
+                alt="Jaume Josa"
+              />
+              <h3 class="mt-4 text-xl"><b>Jaume Josa</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 15 de Desembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Doctor en Ciències Químiques per la Universitat de Barcelona. És
+                membre del GECC (Grup d’Experts del Canvi Climàtic de Catalunya)
+                i ha participat en conferències i debats sobre aquesta temàtica;
+                és coautor del Tercer Informe sobre el Canvi Climàtic a
+                Catalunya.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>" La petxada de carboni que deixem" </b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[400px] h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="w-20 h-20 mt-4 mb-3 bg-center bg-auto rounded-full shadow-lg"
+                src="./public/img/dr-serafi.jpeg"
+                alt="Dr. Serafí Cambray Carner foto"
+              />
+              <h3 class="mt-4 text-xl"><b>Dr. Serafí Cambray Carner</b></h3>
+              <h4 class="mt-2 text-lg">Dijous 16 de Desembre</h4>
+              <p class="p-4 m-2 text-base text-center">
+                Postgraduada per la Universtat Autònoma sobre Comunicació i
+                líderatge polític. En aquesta xerrada mirarem de descobrir d'una
+                manera divertida i molt accessible, alguns dels aspectes claus
+                de la comunicació no verbal.
+              </p>
+              <p class="text-lg text-center">
+                Conferència:
+                <b>"Les malalties cardiovasculars" </b>
               </p>
             </div>
           </div>
