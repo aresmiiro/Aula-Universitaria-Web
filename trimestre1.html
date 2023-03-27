@@ -62,7 +62,7 @@
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown"
             aria-expanded="false"
             id="menu-toggle"
@@ -125,7 +125,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="relative z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow md:absolute w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -157,9 +157,8 @@
               </li>
               <li>
                 <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:text-base"
+                  id="dropdownButton"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto md:text-base"
                 >
                   Activitats
                   <svg
@@ -178,8 +177,8 @@
                 </button>
                 <!-- Dropdown menu -->
                 <div
-                  id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  id="dropdownMenu"
+                  class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -189,21 +188,14 @@
                       <a
                         href="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trismetre 1</a
+                        >Presentacións llibres</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trimestre 2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trimestre 3</a
+                        >Sortides</a
                       >
                     </li>
                   </ul>

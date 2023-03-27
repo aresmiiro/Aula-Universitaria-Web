@@ -57,14 +57,14 @@
           <a href="#" class="flex items-center justify-between">
             <img
               src="./public/img/Logo_Aula_2 (1).png"
-              class="h-10 md:h-12"
+              class="flex items-center justify-center h-10 md:h-12"
               alt="Logo Aula Universitaria"
             />
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown"
             aria-expanded="false"
             id="menu-toggle"
@@ -104,17 +104,10 @@
                 >
               </li>
               <li>
-                <a
-                  href="#calendari"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:text-base"
-                  >Calendari</a
-                >
-              </li>
-              <li>
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto md:text-base"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#2a466d] md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:text-base"
                 >
                   Programa
                   <svg
@@ -134,7 +127,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow sm:absolute w-44"
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -187,7 +180,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownMenu"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="absolute z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -197,21 +190,14 @@
                       <a
                         href="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trismetre 1</a
+                        >Presentacións llibres</a
                       >
                     </li>
                     <li>
                       <a
                         href="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trimestre 2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white md:text-base"
-                        >Trimestre 3</a
+                        >Sortides</a
                       >
                     </li>
                   </ul>
@@ -245,7 +231,7 @@
         "
       >
         <h1
-          class="z-40 flex justify-center text-xl font-extrabold tracking-tight text-white sm:text-4xl item-center mt-28"
+          class="z-40 flex justify-center text-3xl font-extrabold tracking-tight text-center text-white sm:text-4xl item-center mt-28"
         >
           Aula Universitària del Palau d'Anglesola
         </h1>
@@ -358,7 +344,7 @@
       </section>
 
       <section
-        class="flex flex-col items-center justify-start w-full h-auto mt-28"
+        class="flex flex-col items-center justify-start w-full h-screen ml-10 mr-10 mt-28"
       >
         <h2
           class="mb-8 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
@@ -366,11 +352,12 @@
           Calendari activitats aula
         </h2>
         <iframe
+          class=""
           src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23F6BF26&ctz=Europe%2FMadrid&showTabs=0&src=OTk0MjkwZDkxN2VhYmFmZTI0OTk1ZDg4NDEwODBkZWNmOTcyNjMzOGUyNTdlOGJmNTBhNGY4Yjc4NDQ3N2Q0M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
           style="border: solid 1px #777"
-          width="800"
-          height="600"
           frameborder="0"
+          height="auto"
+          width="auto"
           scrolling="no"
         ></iframe>
       </section>

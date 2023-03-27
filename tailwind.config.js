@@ -5,19 +5,23 @@ module.exports = {
   content: ['./**/*.{html,js}', './*.html'],
   theme: {
     extend: {
-      colors: {
-        'purple' : '#b50069',
-        'orange' : '#ff8906',
-        'bgdark' : '#040010',
-        'text-light': '#1b1c1e',
-        'text-dark': '#a7a9be',
+      screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
       },
-      fontFamily: {
-        primary: ["'Quicksand'", "'sans-serif'"],
-        title: [ "'Alegreya Sans'", "sans-serif"],
-        subtitle: ["'Lato'", "sans-serif"],
-        text: ["'Frank Ruhl Libre'", "serif"],
-      },
+      
       gridTemplateColumns: {
         'fluid': 'repeat(auto-fit, minmax(400px, 1fr))',
       },
