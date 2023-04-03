@@ -7,4 +7,31 @@
     .image-background {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
     }
-}
+
+    .calendar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:900px;
+        height: 900px;
+    }
+        @media (max-width: 550px) {
+            .calendar{
+                width: 350px;
+                height: 350px;
+            }
+        }
+                 @media (min-width:400px) {
+                     .calendar {
+                         width: 700px;
+                         height: 600px;
+                     }
+
+                
+                                          
+                
+
+       
+            
+        }
+    }
